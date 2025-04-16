@@ -1,5 +1,6 @@
 name: Variable Types
-
+on:
+  push:
 env:
   NUMBER: 42
   BOOL: true
