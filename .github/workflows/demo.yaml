@@ -1,0 +1,21 @@
+name: Variable Types
+
+env:
+  NUMBER: 42
+  BOOL: true
+  URL: https://github.com
+  MULTILINE: |
+    Это многострочная
+    переменная
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show types
+        run: |
+          echo "Число: $NUMBER"
+          echo "Булево: $BOOL"
+          echo "URL: $URL"
+          echo "Многострочное:"
+          echo "$MULTILINE"
